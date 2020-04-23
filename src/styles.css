@@ -4,6 +4,11 @@
   margin-left: 5%;
   display: none;
 }
+#search-btn {
+  border-radius: 10px;
+  background-color: lavenderblush;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #dist-label {
   font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -30,7 +35,7 @@ body {
   background-color: darkslategrey;
   margin-bottom: 3%;
   border-radius: 25px;
-  display:;
+  border: 2px solid white;
 }
 
 #count {
@@ -69,7 +74,7 @@ a {
 }
 
 .bike {
-  border: solid 3px black; 
+  border: solid  flor; 
   border-radius: 20px;
 }
 
