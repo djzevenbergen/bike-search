@@ -2,8 +2,28 @@
   background-color: darkcyan;
   border-radius: 25px;
   margin-left: 5%;
+  display: none;
 }
-
+#dist-label {
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#zip-label {
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.zip-input {
+  border-radius: 15px;
+  margin-left: 5px;
+}
+body {
+  background-color: darkslategrey;
+}
+#jumboOne {
+  margin-top: 20px;
+  border-radius: 15px;
+  border: solid 2px darkslategrey;
+}
 #jumboTwo {
   height: 45px;
   margin-top: 3%;
@@ -20,6 +40,8 @@
 
 #cont {
   background-color: cadetblue;
+  border-radius: 15px;
+  border:2px solid floralwhite;
 }
 
 #cont-two {

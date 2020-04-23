@@ -12,7 +12,9 @@ $(document).ready(function () {
 
   $("#search-form").submit(function (event) {
     event.preventDefault();
+    $("#column").show();
     $("#output").text('');
+
 
     let zip = $('#zipcode').val();
     let dist = $("#distance").val();
@@ -39,7 +41,8 @@ $(document).ready(function () {
 
         response.bikes.forEach(function (bike) {
           let date = timeConverter(bike.date_stolen);
-          $("#output").append('<li class="bike"><a href="' + bike.url + '" target="_blank">' + bike.url + '</a><p>Date Stolen: ' + date + '</p><img src="' + bike.thumb + '" alt="no image available"></li><br>');
+          $("#output").append('<li class="bike"><a href="' + bike.url + '" target="_blank">' + bike.title + '</a><p>Date Stolen: ' + date + '</p><img src="' + bike.thumb + '" alt="no image available"></li><br>');
+          $("#count")
         });
 
       } else {
