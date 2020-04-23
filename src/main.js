@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
+import { timeConverter } from './bike-search.js';
 
 
 
@@ -33,8 +34,12 @@ $(document).ready(function () {
       if (response) {
         $("#location").text(`These bikes are within ${dist} miles of ${zip}`);
         console.log(response);
+
+
+
         response.bikes.forEach(function (bike) {
-          $("#output").append('<li class="bike"><a href="' + bike.url + '" target="_blank">' + bike.url + '</a><img src="' + bike.thumb + '" alt="no image available"></li><br>');
+          let date = timeConverter(bike.date_stolen);
+          $("#output").append('<li class="bike"><a href="' + bike.url + '" target="_blank">' + bike.url + '</a><p>Date Stolen: ' + date + '</p><img src="' + bike.thumb + '" alt="no image available"></li><br>');
         });
 
       } else {

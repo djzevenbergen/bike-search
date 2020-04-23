@@ -39,6 +39,7 @@ a {
 
 #output {
   font-size: 18px;
+  margin-left: 5px;
 }
 
 #column-two {
@@ -47,8 +48,13 @@ a {
 
 .bike {
   border: solid 3px black; 
+  border-radius: 20px;
 }
 
+
+
 img {
-  margin: 3px;
+  margin-left: 13px;
+  height: 140px;
+  width: 140px;
 }
